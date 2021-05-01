@@ -10,7 +10,7 @@ class SetupInputPanel(QWidget):
         self.setup_and_inputs_groupbox = self.setup_and_inputs_groupbox()
 
         self.main_layout.addWidget(self.setup_and_inputs_groupbox)
-    
+
     def setup_and_inputs_groupbox(self):
         groupbox = QGroupBox('Setup and inputs')
         groupbox_layout = QVBoxLayout()
@@ -22,6 +22,3 @@ class SetupInputPanel(QWidget):
         groupbox_layout.addWidget(self.tab_widget)
 
         return groupbox
-
-
-    

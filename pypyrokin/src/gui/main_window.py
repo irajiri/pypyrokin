@@ -7,9 +7,10 @@ TITLE = f'PyPyroKin {VERSION}'
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, *, setup_input_panel=None):
+    def __init__(self, *, setup_input_panel=None, plot_panel=None):
         super().__init__()
         self.setup_input_panel = setup_input_panel
+        self.plot_panel = plot_panel
 
         self.main_widget = None
         self.menu_bar = None
@@ -23,6 +24,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.main_widget)
 
         self.main_widget.addWidget(self.setup_input_panel)
+        self.main_widget.addWidget(self.plot_panel)
 
         self.create_menu_bar()
 
