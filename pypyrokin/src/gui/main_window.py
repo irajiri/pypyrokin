@@ -26,6 +26,9 @@ class MainWindow(QMainWindow):
         self.main_widget.addWidget(self.setup_input_panel)
         self.main_widget.addWidget(self.plot_panel)
 
+        self.main_widget.setStretchFactor(0, 2)
+        self.main_widget.setStretchFactor(1, 1)
+
         self.create_menu_bar()
 
     def create_menu_bar(self):
